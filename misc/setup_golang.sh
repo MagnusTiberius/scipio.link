@@ -14,3 +14,4 @@ sudo tar -C /usr/local -xvzf go1.16.2.linux-amd64.tar.gz
 //export GOPATH="$HOME/projects/src"
 
 //go install $GOPATH/hello.go
+//https://www.digitalocean.com/community/tutorials/how-to-install-go-1-7-on-centos-7
