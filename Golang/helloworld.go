@@ -34,5 +34,6 @@ func renderTemplate(w http.ResponseWriter, r *http.Request) {
 func main() {
     //http.HandleFunc("/", handler)
 	http.HandleFunc("/", renderTemplate)
+	 http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("./assets"))))
     log.Fatal(http.ListenAndServe(":80", nil))
 }
