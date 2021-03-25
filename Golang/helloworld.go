@@ -7,6 +7,12 @@ import (
 	"html/template"
 )
 
+type Student struct {
+	Name       string
+	College    string
+	RollNumber int
+}
+
 func handler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 }
